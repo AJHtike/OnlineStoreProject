@@ -81,8 +81,8 @@ nav li a:hover{
 }
 
 main div {
-    float:left;
-    width: 32%;
+    /*float:left;*/
+    /*width: 35%;*/
     text-align: center;
     /*background-color: white;*/
     color: #000;
@@ -142,3 +142,38 @@ aside nav li{
 .contact a:hover{
   text-decoration: underline;
 }
+
+/*CSS for landing page*/
+#product-grid {
+  margin-bottom:30px;
+}
+.product-item {
+  float:left;
+  background: #ffffff;
+  margin:15px 10px;
+  padding:5px;
+  border:#CCC 1px solid;
+  border-radius:4px;
+}
+.product-item div{
+  text-align:center;
+  margin:10px;
+}
+.product-price {
+	color: #005dbb;
+    font-weight: 600;
+}
+.product-image {
+  height:100px;
+  background-color:#FFF;
+}
+
+.btnOrderAction{
+  background-color: #eb9e4f;
+    border: 0;
+    padding: 3px 10px;
+    color: #ffffff;
+    margin-left: 2px;
+    border-radius: 2px;
+}
+/* ~~End~~ */

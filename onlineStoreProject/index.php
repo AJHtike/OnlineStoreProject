@@ -1,3 +1,9 @@
+
+<?php
+session_start();
+include "php/dbconnect.php";
+$db_handle = new dbconnect();
+?>
 <!-- sample.html -->
 <!-- ICT-286 Major Assignment -2 Online store (Group Project) -->
 <!-- ** It is a template sample HTML5 which can be reusable as a design template between team member to construct web pages -->
@@ -38,9 +44,60 @@
     <main>
       <!-- main content -->
       <!-- Whatever needed in the main content goes here!! -->
+      <?php
+      echo '<div id="product-grid"';
+      echo '<h1></h1>';
+      // If the user didn't input anything to search or if it is the visitor
+      if(!empty($_POST['txtSearch']))
+      {
+        $product_array = $db_handle->runQuery("select * from Products where ProductName = '". $_POST["txtSearch"]."'");
+        if(!empty($product_array)){
+          foreach ($product_array as $key => $value) {
+            echo '<div class="product-item">';
+            echo '<div class="product-image"><img src="'.$product_array[$key]["Image"].'"></div>';
+            echo '<br />';
+            echo '<br />';
+            echo '<div><strong>'. $product_array[$key]["ProductName"]. '</strong></div>';
+            echo '<div class="product-price">' . "$".$product_array[$key]["UnitPrice"].'</div>';
+            echo '<div><input type="text" name="quantity" value="1" size="2"/></div>';
+            echo '<br />';
+            echo '<div><input type="submit" value="Order" class="btnOrderAction"/></div>';
+            echo '</div>';
+          }
+        }
+      }
+      else
+      {
+        $product_array = $db_handle->runQuery("select * from Products order by ProductID ASC");
+        if(!empty($product_array)){
+          foreach ($product_array as $key => $value) {
+            echo '<div class="product-item">';
+            echo '<div class="product-image"><img src="'.$product_array[$key]["Image"].'"></div>';
+            echo '<br />';
+            echo '<br />';
+            echo '<div><strong>'. $product_array[$key]["ProductName"]. '</strong></div>';
+            echo '<div class="product-price">' . "$".$product_array[$key]["UnitPrice"].'</div>';
+            echo '<div><input type="text" name="quantity" value="1" size="2"/></div>';
+            echo '<br />';
+            echo '<div><input type="submit" value="Order" class="btnOrderAction"/></div>';
+            echo '</div>';
+          }
+        }
+      }
+      echo '</div>';
+      ?>
+      <div>
+        
+      </div>
+
     </main>
 
     <aside>
+
+      <form action="index.php" method="post">
+        <input type="text" name="txtSearch" size="50" placeholder="Search Your Product"/>
+        <input type = "submit"  value = "Search" />
+      </form>
       <!-- Vertical browsing links to each category -->
       <nav>
       <ul>
