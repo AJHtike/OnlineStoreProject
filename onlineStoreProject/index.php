@@ -49,9 +49,16 @@ $db_handle = new dbconnect();
       echo '<div id="product-grid"';
       echo '<h1></h1>';
       // If the user didn't input anything to search or if it is the visitor
-      if(!empty($_POST['txtSearch']))
+      // Trim the search text input withoud any unecessary spaces or EvWatcher
+      // Then,
+      if(isset($_POST['txtSearch']))
       {
-        $product_array = $db_handle->runQuery("select * from Products where ProductName = '". $_POST["txtSearch"]."'");
+       $txtterm = trim($_POST['txtSearch']);
+     }
+      if(!empty($txtterm))
+      {
+        // Parsing into the array of prodcuts from database access data selection.
+        $product_array = $db_handle->runQuery("select * from Products where ProductName LIKE '%$txtterm%'");
         if(!empty($product_array)){
           foreach ($product_array as $key => $value) {
             echo '<div class="product-item">';
@@ -86,6 +93,7 @@ $db_handle = new dbconnect();
           }
         }
       }
+
       echo '</div>';
       ?>
       </main>
