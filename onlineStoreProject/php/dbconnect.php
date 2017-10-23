@@ -6,9 +6,9 @@
 <?php
 class dbconnect {
 	private $host = "localhost";
-	private $user = "X33149316"; //Change to test here if you are other user on Ceto server
-	private $password = "X33149316"; //Change to test here if you are other user on Ceto server
-	private $database = "X33149316"; //Change to test here if you are other user on Ceto server
+	private $user = "*********"; //Change to test here if you are other user on Ceto server
+	private $password = "*********"; //Change to test here if you are other user on Ceto server
+	private $database = "*********"; //Change to test here if you are other user on Ceto server
   public $db;
   public $conn;
 
