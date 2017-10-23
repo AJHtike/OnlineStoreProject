@@ -13,7 +13,7 @@ $db_handle = new dbconnect();
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Surf!n'buy | pinnacle of largest online store</title>
-<link rel="stylesheet" href="CSS/style.css"/>
+<link rel="stylesheet" href="./CSS/style.css"/>
 <!-- Link references from W3C schools : https://www.w3schools.com/icons/ -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
@@ -49,8 +49,7 @@ $db_handle = new dbconnect();
       echo '<div id="product-grid"';
       echo '<h1></h1>';
       // If the user didn't input anything to search or if it is the visitor
-      // Trim the search text input withoud any unecessary spaces or EvWatcher
-      // Then,
+      // Trim the search text input withoud any unecessary spaces or Etc.,
       if(isset($_POST['txtSearch']))
       {
        $txtterm = trim($_POST['txtSearch']);
@@ -108,7 +107,7 @@ $db_handle = new dbconnect();
 
       <nav>
         <ul>
-          <li><a href="getproduct.php?q=loptop">Laptop</a></li>
+          <li><a href="getproduct.php?q=laptop">Laptop</a></li>
           <li><a href="getproduct.php?q=tablet">Tablet</a></li>
           <li><a href="getproduct.php?q=mobile">Mobile</a></li>
         </ul>

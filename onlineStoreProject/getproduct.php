@@ -79,7 +79,7 @@ $db_handle = new dbconnect();
 
       <nav>
         <ul>
-          <li><a href="getproduct.php?q=loptop">Laptop</a></li>
+          <li><a href="getproduct.php?q=laptop">Laptop</a></li>
           <li><a href="getproduct.php?q=tablet">Tablet</a></li>
           <li><a href="getproduct.php?q=mobile">Mobile</a></li>
         </ul>
