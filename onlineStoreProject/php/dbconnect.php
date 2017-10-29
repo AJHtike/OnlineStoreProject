@@ -3,12 +3,20 @@
 <!-- Version 0.2 -->
 <!-- @According to test on different server and its used of version PHP,compromised to edit and chabnge MySQL command -->
 <!-- *** mysql_connect AND etc codes are deprecated in modern php version -->
+<!-- coded by Alex Htike -->
+
+<!-- 29/Oct/2017 -->
+<!-- Add disconnect database function to be able to optimise the memories allocation of the application more efficient and time savings
+also reuseable -->
+<!-- version 0.3 -->
+<!-- coded by Alex Htike -->
+
 <?php
 class dbconnect {
 	private $host = "localhost";
-	private $user = "*********"; //Change to test here if you are other user on Ceto server
-	private $password = "*********"; //Change to test here if you are other user on Ceto server
-	private $database = "*********"; //Change to test here if you are other user on Ceto server
+	private $user = "X33149316"; //Change to test here if you are other user on Ceto server
+	private $password = "X33149316"; //Change to test here if you are other user on Ceto server
+	private $database = "X33149316"; //Change to test here if you are other user on Ceto server
   public $db;
   public $conn;
 
