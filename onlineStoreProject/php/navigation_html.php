@@ -6,9 +6,10 @@
 <!-- Code by Alex Htike -->
 <nav>
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Log In</a></li>
-    <li><a href="#">Register</a></li>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="about.php">About</a></li>
+    <!-- Saturday late submiision changes -->
+    <!-- <li><a href="#">Log In</a></li> -->
+    <li><a href="html/sign_in.html">Register</a></li>
   </ul>
 </nav>

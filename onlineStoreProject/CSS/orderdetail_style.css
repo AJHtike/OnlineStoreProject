@@ -67,7 +67,7 @@ nav li a{
 }
 
 nav li a:hover{
-  color: #07278c;
+  color: #3ff599;
 }
 
 .logo{
@@ -84,18 +84,13 @@ nav li a:hover{
 main div {
     /*float:left;*/
     /*width: 35%;*/
-    text-align: center;
+    /*text-align: center;*/
     /*background-color: white;*/
     color: #000;
-    margin: 5px;
+    margin: 10px;
 }
-.about{
 
-  font-variant: petite-caps;
-    font-size: 27px;
-    color: white;
-    font-weight: bold;
-}
+
 
 footer section{
   float:left;
@@ -155,31 +150,7 @@ aside nav li{
   text-decoration: underline;
 }
 
-/*CSS for landing page*/
-#product-grid {
-  margin-bottom:30px;
-}
-.product-item {
-  float:left;
-  background: #ffffff;
-  margin:15px 10px;
-  padding:5px;
-  border:#CCC 1px solid;
-  border-radius:4px;
-}
-.product-item div{
-  text-align:center;
-  margin:10px;
-}
-.product-price {
-	color: #005dbb;
-    font-weight: 600;
-}
-.product-image {
-  height:100px;
-  background-color:#FFF;
-}
-
+/*CSS for Orderdetail page*/
 .btnOrderAction{
   background-color: #eb9e4f;
     border: 0;
@@ -190,37 +161,45 @@ aside nav li{
     font-size: 15px;
 }
 
-.btnView {
-      border-radius: 25px;
+#product-detail
+{
+  margin-bottom: 30px;
+  width: 50%;
+  margin:0px auto;
+  /*background-color: #fff;*/
+}
+
+.product-item {
+  /*float:left;*/
+  background: #ffffff;
+  margin:15px 10px;
+  padding:5px;
+  border:#CCC 1px solid;
+  border-radius:4px;
+}
+
+#product-detail h1{
+  color:#fff;
+  font-size: 25px;
+  text-align: center;
 }
 
 .btnView a{
   color:#000;
   text-decoration: underline;
-  font-size: 24px;
 }
 
-.btnView a:hover{
-  color: #07278c;
-
-}
-
-.btnrefSearch a{
-  color:#fff;
-  text-decoration: underline;
-}
-
-.btnrefSearch a:hover{
-  color: #07278c;
-
-}
-
-.lastsearch
-{
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
+.productdetail-image{
   float: left;
-    width: 100%;
+padding-left: 24px;
+
 }
+
+.product-qty{
+  text-align:center;
+}
+.product-order{
+  text-align:center;
+}
+
 /* ~~End~~ */

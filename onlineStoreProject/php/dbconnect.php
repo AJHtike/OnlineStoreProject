@@ -56,6 +56,7 @@ class dbconnect {
   		while($row = mysqli_fetch_array($result)){
   			$resultset[] = $row;
   		}
+
   		if(!empty($resultset))
   			return $resultset;
 

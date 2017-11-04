@@ -9,10 +9,11 @@
   <div class="container">
   <section class="sitemap">SiteMap
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Log In</a></li>
-      <li><a href="#">Register</a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.php">About</a></li>
+      <!-- 4 nov 2017 changes -->
+      <!-- <li><a href="#">Log In</a></li> -->
+      <li><a href="html/sign_in.html">Register</a></li>
     </ul>
   </section>
 
